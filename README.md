@@ -25,5 +25,5 @@ Journaux : `com.juliencr.msi-cooling.sdPlugin/logs/`.
 ## À savoir
 
 - **MSI Center (`DCv2.exe`) doit tourner.** Le serveur central ne fait que relayer la commande ; c'est l'interface qui charge et applique les courbes. Sans elle, le plugin n'envoie rien et la touche signale une erreur.
-- Le protocole est issu de la rétro-ingénierie de MSI Center 2.0.75. Une mise à jour de MSI Center peut le casser.
+- Le protocole est issu de la rétro-ingénierie de MSI Center 2.0.75. Une mise à jour de MSI Center peut le casser : [NOTES.md](NOTES.md) détaille le protocole et la méthode pour le retrouver.
 - Le script `Set-CoolingProfile.ps1` fait la même chose en ligne de commande et sert de référence du protocole.
