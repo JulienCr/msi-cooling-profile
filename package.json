@@ -1,0 +1,25 @@
+{
+  "name": "msi-cooling-streamdeck",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "build": "node scripts/build.mjs",
+    "icons": "node scripts/make-icons.mjs",
+    "validate": "streamdeck validate com.juliencr.msi-cooling.sdPlugin",
+    "sd:link": "streamdeck link com.juliencr.msi-cooling.sdPlugin",
+    "sd:restart": "streamdeck restart com.juliencr.msi-cooling"
+  },
+  "dependencies": {
+    "@elgato/streamdeck": "^3.0.4"
+  },
+  "devDependencies": {
+    "@elgato/cli": "^1.10.4",
+    "@types/node": "^22.19.0",
+    "esbuild": "^0.28.2",
+    "typescript": "^5.9.0",
+    "vitest": "^3.2.0"
+  }
+}
